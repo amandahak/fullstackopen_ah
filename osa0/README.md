@@ -7,8 +7,7 @@ Näissä kaavioissa käsittelemme muistiinpanojen hallintaa verkkosovelluksessa,
 
 **Sekvenssikaaviot**
 1. Perinteinen versio - Muistiinpanon Luominen
-   
-Sekvenssikaavio kuvaa prosessia, jossa käyttäjä luo uuden muistiinpanon perinteisessä monisivuisessa sovelluksessa.
+
 Käyttäjätoiminto: Käyttäjä kirjoittaa muistiinpanon tekstikenttään ja painaa 'Tallenna'-painiketta.
 
 3. Single Page Application (SPA) - sivun lataaminen
@@ -17,7 +16,6 @@ Käyttäjätoiminto: Käyttäjä navigoi osoitteeseen https://studies.cs.helsink
 
 5. Single Page Application (SPA) - Muistiinpanon Luominen
    
-Sekvenssikaavio kuvaa prosessia, jossa käyttäjä luo uuden muistiinpanon.
 Käyttäjätoiminto: Käyttäjä kirjoittaa muistiinpanon tekstikenttään ja painaa 'Tallenna'-painiketta.
 
 _Linkit
