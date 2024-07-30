@@ -6,15 +6,15 @@ Osaan liittyvät palautettavat sekvenssikaaviot (_tehtava_0.4.md, tehtava_0.5.md
 Näissä kaavioissa käsittelemme muistiinpanojen hallintaa verkkosovelluksessa, joka tarjoaa sekä perinteisen version että Single Page Application (SPA) -version. Sekvenssikaavioiden luomiseen on käytetty Mermaid-syntaksia, jolla voimme visualisoida ja dokumentoida sovelluksen toimintaa eri tilanteissa.
 
 **Sekvenssikaaviot**
-1. Perinteinen versio - Muistiinpanon Luominen
+0.4 Perinteinen versio - Muistiinpanon Luominen
 
 Käyttäjätoiminto: Käyttäjä kirjoittaa muistiinpanon tekstikenttään ja painaa 'Tallenna'-painiketta.
 
-3. Single Page Application (SPA) - sivun lataaminen
+0.5 Single Page Application (SPA) - sivun lataaminen
    
 Käyttäjätoiminto: Käyttäjä navigoi osoitteeseen https://studies.cs.helsinki.fi/exampleapp/spa
 
-5. Single Page Application (SPA) - Muistiinpanon Luominen
+0.6 Single Page Application (SPA) - Muistiinpanon Luominen
    
 Käyttäjätoiminto: Käyttäjä kirjoittaa muistiinpanon tekstikenttään ja painaa 'Tallenna'-painiketta.
 
