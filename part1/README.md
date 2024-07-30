@@ -54,3 +54,28 @@ Tilastotiedot sisältävät palautteiden kokonaismäärän, keskiarvon sekä pos
 Käyttäjä voi antaa palautetta klikkaamalla nappeja, ja sovellus päivittää tilastot reaaliajassa näiden klikkausten perusteella.
 
 ## anekdootit (tehtävät 1.12, 1.13 ja 1.14)
+
+_part1/anekdootit/src/App.jsx_
+
+**Sovellus toimii seuraavanlaisesti:**
+
+Sovellus esittää ohjelmointiin liittyvät anekdootin ja mahdollistaa käyttäjälle anekdootin äänestämisen. 
+
+Eniten ääniä saanut anekdootti näytetään alla. 
+
+![äänestyskone](image-1.png)
+
+## Sovelluksen Rakenne
+
+_App_-komponentti on pääkomponentti, joka hallitsee anekdoottien näyttämistä, äänestämistä ja tilastoja (alustettu arvoon `0`)
+
+  _Tilat:_
+
+  _selected_ (number): Indeksi, joka määrittää nykyisesti näytettävän anekdootin anecdotes-taulukosta. Alustettu arvoon 0.
+  _votes_ (array): Taulukko, joka tallentaa jokaisen anekdootin saamien äänten määrän. Alustettu taulukkoon, jossa on yhtä monta nollaa kuin on anekdootteja.
+
+**Funktiot:**
+
+- _getRandomAnecdote:_ Valitsee satunnaisen anekdootin näyttämiseksi
+- _voteForAnecdote:_ Lisää äänen nykyiselle anekdootille. Kopioi votes-taulukon, lisää äänen nykyisen anekdootin kohdalle ja päivittää votes-tilan.
+- _getMostVotedAnecdote:_ Palauttaa eniten ääniä saaneen anekdootin. Löytää äänten maksimiarvon ja käyttää sitä löytääkseen indeksin, jolla on suurin äänten määrä.
