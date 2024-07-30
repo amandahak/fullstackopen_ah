@@ -3,8 +3,8 @@
 Tässä osassa tutustutaan React-kirjastoon, jolla tehdään sovelluksen selaimessa suoritettava koodi. Osassa katsastetaan myös Javascriptin Reactin kannalta oleellisimpia ominaisuuksia.
 
 **osa-alueet**
-* Reactin alkeet
-* JavaScriptiä
+* Reactin alkeet 
+* JavaScriptiä 
 * Komponentin tila ja tapahtumankäsittely
 * Monimutkaisempi tila, Reactin debuggaus
 
