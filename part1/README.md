@@ -27,7 +27,7 @@ _Part_-komponentti näyttää yhden osan nimen ja tehtävien määrän.
 
 _Total_-komponentti laskee ja näyttää kaikkien osien tehtävien yhteismäärän.
 
-## unicafe (tehtävät 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12, 1.13 ja 1.14)
+## unicafe (tehtävät 1.6, 1.7, 1.8, 1.9, 1.10 ja 1.11)
 
 _part1/unicafe/src/App.jsx_
 
@@ -53,3 +53,4 @@ Tilastotiedot sisältävät palautteiden kokonaismäärän, keskiarvon sekä pos
 
 Käyttäjä voi antaa palautetta klikkaamalla nappeja, ja sovellus päivittää tilastot reaaliajassa näiden klikkausten perusteella.
 
+## anekdootit (tehtävät 1.12, 1.13 ja 1.14)
