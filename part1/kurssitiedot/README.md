@@ -1,20 +1,4 @@
-# Kurssin tehtävät 1.1, 1.2, 1.3, 1.4 ja 1.5 "Kurssitiedot"
 
-_part1/kurssitiedot/src/App.jsx_
-
-**Sovellus toimii seuraavasti:**
-
-Kurssin tiedot (nimi ja osat) määritellään App-komponentissa.
-
-_App_-komponentti välittää nämä tiedot propsien avulla alikomponenteille.
-
-_Header_-komponentti näyttää kurssin nimen.
-
-_Content_-komponentti käy läpi kurssin osat ja renderöi jokaisesta Part-komponentin.
-
-_Part_-komponentti näyttää yhden osan nimen ja tehtävien määrän.
-
-_Total_-komponentti laskee ja näyttää kaikkien osien tehtävien yhteismäärän.
 
 
 # React + Vite
