@@ -1,5 +1,4 @@
-´´´mermaid
-
+```mermaid
 sequenceDiagram
     participant user as Käyttäjä
     participant browser as Selain
@@ -40,3 +39,5 @@ sequenceDiagram
     deactivate server    
 
     Note right of browser: Selain suorittaa tapahtumakäsittelijän, joka renderöi muistiinpanot
+
+```
