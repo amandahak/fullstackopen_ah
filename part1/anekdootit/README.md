@@ -1,0 +1,1 @@
+anekdootit -sovelluksen tiedot `part1/README.md`
