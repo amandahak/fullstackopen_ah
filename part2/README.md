@@ -20,15 +20,18 @@ Tämä on yksinkertainen React-sovellus, joka renderöi kurssien ja niiden osien
 
 ![Kurssitiedot](image.png)
 
-`App`-komponentti on sovelluksen pääkomponentti, joka sisältää kurssien tiedot ja renderöi `Course`-komponentin jokaiselle kurssille.
+`App`-komponentti on sovelluksen pääkomponentti, joka sisältää kurssien tiedot ja renderöi Course-komponentin jokaiselle kurssille.
 
 _components/Course.jsx_
 
 `Course`-komponentti vastaa yksittäisen kurssin tietojen renderöinnistä. Se sisältää seuraavat alikomponentit:
 
 _Header:_ Renderöi kurssin nimen.
+
 _Part:_ Renderöi yhden osan nimen ja tehtävien määrän.
+
 _Content:_ Renderöi kaikki osat käyttämällä Part-komponenttia.
+
 _Total:_ Laskee ja renderöi kaikkien osien tehtävien yhteismäärän.
 
 ## Lorem Ipsum (tehtävät 2.6, 2.7, 2.8, 2.9 ja 2.10)
