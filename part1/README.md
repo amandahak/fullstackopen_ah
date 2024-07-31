@@ -71,8 +71,8 @@ _App_-komponentti on pääkomponentti, joka hallitsee anekdoottien näyttämist�
 
   _Tilat:_
 
-  _selected_ (number): Indeksi, joka määrittää nykyisesti näytettävän anekdootin anecdotes-taulukosta. Alustettu arvoon 0.
-  _votes_ (array): Taulukko, joka tallentaa jokaisen anekdootin saamien äänten määrän. Alustettu taulukkoon, jossa on yhtä monta nollaa kuin on anekdootteja.
+    - _selected_ (number): Indeksi, joka määrittää nykyisesti näytettävän anekdootin anecdotes-taulukosta. Alustettu arvoon 0.
+    - _votes_ (array): Taulukko, joka tallentaa jokaisen anekdootin saamien äänten määrän. Alustettu taulukkoon, jossa on yhtä monta nollaa kuin on anekdootteja.
 
 **Funktiot:**
 
