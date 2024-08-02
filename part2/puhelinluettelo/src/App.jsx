@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
-
 import Filter from './components/Filter';
 import PersonForm from './components/PersonForm';
 import Persons from './components/Persons';
+import personService from './services/persons';
 
 const App = () => {
   // Alustetaan tilat henkilöiden, uuden nimen, numeron ja suodattimen hallintaan
@@ -12,16 +11,11 @@ const App = () => {
   const [newNumber, setNewNumber] = useState('');
   const [filter, setFilter] = useState('');
 
-  // Haetaan henkilöt palvelimelta komponentin alussa
+  // Haetaan henkilölista palvelimelta
   useEffect(() => {
-    axios
-      .get('http://localhost:3001/persons')
-      .then(response => {
-        setPersons(response.data);
-      })
-      .catch(error => {
-        console.error('Error fetching data: ', error);
-      });
+    personService.getAll().then(initialPersons => {
+      setPersons(initialPersons);
+    });
   }, []);
 
   // Päivitetään newName-tila, kun nimen syötekenttää päivitetään
@@ -47,27 +41,59 @@ const App = () => {
     const nameExists = persons.find(person => person.name === newName);
 
     if (nameExists) {
-      alert(`${newName} is already added to phonebook`);
-      return;
+      const confirmReplace = window.confirm(
+        `${newName} is already added to phonebook, replace the old number with a new one?`
+      );
+
+      if (confirmReplace) {
+        const updatedPerson = { ...nameExists, number: newNumber };
+        personService
+          .update(nameExists.id, updatedPerson)
+          .then(returnedPerson => {
+            setPersons(persons.map(person => 
+              person.id !== nameExists.id ? person : returnedPerson
+            ));
+            setNewName('');
+            setNewNumber('');
+          })
+          .catch(error => {
+            console.error('Error updating person: ', error);
+            alert('Error updating person. Please try again.');
+          });
+      }
+    } else {
+      const personObject = {
+        name: newName,
+        number: newNumber
+      };
+
+      personService
+        .create(personObject)
+        .then(returnedPerson => {
+          setPersons(persons.concat(returnedPerson));
+          setNewName('');
+          setNewNumber('');
+        })
+        .catch(error => {
+          console.error('Error adding person: ', error);
+          alert('Error adding person. Please try again.');
+        });
     }
+  };
 
-    // Uusi henkilöobjekti
-    const personObject = {
-      name: newName,
-      number: newNumber,
-    };
-
-    // Lähetetään uusi henkilö palvelimelle
-    axios
-      .post('http://localhost:3001/persons', personObject)
-      .then(response => {
-        setPersons(persons.concat(response.data));
-        setNewName('');
-        setNewNumber('');
-      })
-      .catch(error => {
-        console.error('Error adding person: ', error);
-      });
+  // Poistetaan henkilö puhelinluettelosta
+  const deletePerson = id => {
+    if (window.confirm('Are you sure you want to delete this person?')) {
+      personService
+        .deletePerson(id)
+        .then(() => {
+          setPersons(persons.filter(person => person.id !== id));
+        })
+        .catch(error => {
+          console.error('Error deleting person: ', error);
+          alert('Error deleting person. Please try again.');
+        });
+    }
   };
 
   // Suodatetaan näytettävät henkilöt hakukentän arvon perusteella
@@ -90,7 +116,7 @@ const App = () => {
         addPerson={addPerson}
       />
       <h3>Numbers</h3>
-      <Persons persons={personsToShow} />
+      <Persons persons={personsToShow} deletePerson={deletePerson} />
     </div>
   );
 };
