@@ -34,7 +34,7 @@ _Content:_ Renderöi kaikki osat käyttämällä Part-komponenttia.
 
 _Total:_ Laskee ja renderöi kaikkien osien tehtävien yhteismäärän.
 
-## Lorem Ipsum (tehtävät 2.6, 2.7, 2.8, 2.9 ja 2.10)
+## Puhelinluettelo (tehtävät 2.6, 2.7, 2.8, 2.9 ja 2.10)
 
 _part2_
 
