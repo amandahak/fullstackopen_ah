@@ -34,16 +34,33 @@ _Content:_ Renderöi kaikki osat käyttämällä Part-komponenttia.
 
 _Total:_ Laskee ja renderöi kaikkien osien tehtävien yhteismäärän.
 
-## Puhelinluettelo (tehtävät 2.6, 2.7, 2.8, 2.9 ja 2.10)
 
-_part2_
+## Puhelinluettelo (tehtävät 2.6, 2.7, 2.8, 2.9, 2.10, 2.11, 2.12, 2.13, 2.14, 2.15, 2.16 ja 2.17)
 
-
+_part2_/puhelinluettelo/src_
 
 **Sovellus toimii seuraavanlaisesti:**
 
+Tämä on yksikertainen puhelinluettelona toimiva sovellus. 
 
-## Lorem Ipsum (tehtävät 2.11)
+![alt text](image-1.png)
+
+
+- Lisää uusia yhteystietoja nimellä ja puhelinnumerolla.
+- Suodata yhteystietoja nimen perusteella.
+- Näytä lista kaikista yhteystiedoista.
+
+`App`-komponentti on sovelluksen pääkomponentti. Se hallitsee tilaa ja käsittelee logiikan, kuten yhteystietojen lisäämisen, suodattamisen ja näyttämisen.
+
+`Filter`-komponentti tarjoaa syöttökentän, jonka avulla käyttäjä voi suodattaa yhteystietoja nimen perusteella. Se vastaanottaa `filter`-tilan ja `handleFilterChange`-funktiokutsun, joita käytetään suodattimen tilan hallintaan.
+
+`PersonForm`-komponentti on lomake, jonka avulla käyttäjä voi lisätä uusia yhteystietoja. Se sisältää kentät nimen ja puhelinnumeron syöttämiseksi sekä nappulan, jolla lomake lähetetään.
+
+`Persons`-komponentti näyttää listan yhteystiedoista. Se renderöi jokaisen henkilön nimen ja puhelinnumeron.
+
+
+
+## Lorem Ipsum (tehtävät 2.18, 2.19 ja 2.20)
 
 _part2_
 
@@ -54,13 +71,4 @@ _part2_
 ## Sovelluksen Rakenne
 
 
-## Lorem Ipsum (tehtävät 2.12, 2.13, 2.14 ja 2.15)
-
-_part2_
-
-**Sovellus toimii seuraavanlaisesti:**
-
-
-
-## Sovelluksen Rakenne
 
