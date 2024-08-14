@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+
+.notification {
+  color: green;
+  background: rgb(191, 236, 191);
+  border: 1px solid green;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  background: rgb(201, 198, 198);
+  border: 1px solid red;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}

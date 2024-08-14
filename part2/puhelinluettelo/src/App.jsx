@@ -3,6 +3,8 @@ import Filter from './components/Filter';
 import PersonForm from './components/PersonForm';
 import Persons from './components/Persons';
 import personService from './services/persons';
+import  './App.css'
+
 
 const App = () => {
   // Alustetaan tilat henkilöiden, uuden nimen, numeron ja suodattimen hallintaan
@@ -10,6 +12,8 @@ const App = () => {
   const [newName, setNewName] = useState('');
   const [newNumber, setNewNumber] = useState('');
   const [filter, setFilter] = useState('');
+  const [notification, setNotification] = useState(null); 
+  const [error, setError] = useState(null); 
 
   // Haetaan henkilölista palvelimelta
   useEffect(() => {
@@ -55,10 +59,12 @@ const App = () => {
             ));
             setNewName('');
             setNewNumber('');
+            setNotification(`Updated ${returnedPerson.name}`);
+            setTimeout(() => setNotification(null), 5000); // poistetaan ilmoitus 5s. kuluttua
           })
-          .catch(error => {
-            console.error('Error updating person: ', error);
-            alert('Error updating person. Please try again.');
+          .catch(() => {
+            setError('Error updating person. Please try again.');
+            setTimeout(() => setError(null), 5000); 
           });
       }
     } else {
@@ -73,10 +79,12 @@ const App = () => {
           setPersons(persons.concat(returnedPerson));
           setNewName('');
           setNewNumber('');
+          setNotification(`Added ${returnedPerson.name}`);
+          setTimeout(() => setNotification(null), 5000); 
         })
-        .catch(error => {
-          console.error('Error adding person: ', error);
-          alert('Error adding person. Please try again.');
+        .catch(() => {
+          setError('Error adding person. Please try again.');
+          setTimeout(() => setError(null), 5000); 
         });
     }
   };
@@ -88,10 +96,12 @@ const App = () => {
         .deletePerson(id)
         .then(() => {
           setPersons(persons.filter(person => person.id !== id));
+          setNotification('Person deleted');
+          setTimeout(() => setNotification(null), 5000);
         })
-        .catch(error => {
-          console.error('Error deleting person: ', error);
-          alert('Error deleting person. Please try again.');
+        .catch(() => {
+          setError('Error deleting person. Please try again.');
+          setTimeout(() => setError(null), 5000);
         });
     }
   };
@@ -117,6 +127,8 @@ const App = () => {
       />
       <h3>Numbers</h3>
       <Persons persons={personsToShow} deletePerson={deletePerson} />
+      {notification && <div className="notification">{notification}</div>}
+      {error && <div className="error">{error}</div>}
     </div>
   );
 };
