@@ -43,7 +43,7 @@ _part2_/puhelinluettelo/src_
 
 Tämä on yksikertainen puhelinluettelona toimiva sovellus. 
 
-![alt text](image-1.png)
+![puhelinluettelo](image-3.png)
 
 
 - Lisää uusia yhteystietoja nimellä ja puhelinnumerolla.
