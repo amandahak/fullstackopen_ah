@@ -35,7 +35,7 @@ _Content:_ Renderöi kaikki osat käyttämällä Part-komponenttia.
 _Total:_ Laskee ja renderöi kaikkien osien tehtävien yhteismäärän.
 
 
-## Puhelinluettelo (tehtävät 2.6, 2.7, 2.8, 2.9, 2.10, 2.11, 2.12, 2.13, 2.14, 2.15, 2.16 ja 2.17)
+## puhelinluettelo (tehtävät 2.6, 2.7, 2.8, 2.9, 2.10, 2.11, 2.12, 2.13, 2.14, 2.15, 2.16 ja 2.17)
 
 _part2_/puhelinluettelo/src_
 
