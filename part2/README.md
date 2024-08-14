@@ -58,6 +58,8 @@ Tämä on yksikertainen puhelinluettelona toimiva sovellus.
 
 `Persons`-komponentti näyttää listan yhteystiedoista. Se renderöi jokaisen henkilön nimen ja puhelinnumeron.
 
+- **Onnistumisilmoitukset:** Näyttää vihreän taustan ja viestin, joka kertoo onnistuneesta operaatiosta, kuten henkilön lisäämisestä, numeron päivittämisestä tai henkilön poistamisesta.
+- **Virheilmoitukset:** Näyttää punaisen taustan ja viestin, joka kertoo epäonnistuneesta operaatiosta.
 
 
 ## Lorem Ipsum (tehtävät 2.18, 2.19 ja 2.20)
