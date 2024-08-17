@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Listaus maista
 const CountryList = ({ countries, onSelectCountry }) => {
   return (
     <ul>

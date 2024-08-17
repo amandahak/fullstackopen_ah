@@ -4,18 +4,30 @@ import CountryList from './CountryList';
 import CountryDetail from './CountryDetail';
 
 const App = () => {
+  // Määritellään tilat (maat, hakusana, valittu maa)
   const [countries, setCountries] = useState([]);
   const [query, setQuery] = useState('');
   const [selectedCountry, setSelectedCountry] = useState(null);
 
   useEffect(() => {
-    if (query) {
+    // Poista ylimääräiset välilyönnit hakusanasta
+    const trimmedQuery = query.trim();
+
+    // API-pyyntö aina, kun hakusana muuttuu
+    if (trimmedQuery) {
       axios
-        .get(`https://restcountries.com/v3.1/name/${query}`)
-        .then(response => setCountries(response.data))
+        .get(`https://restcountries.com/v3.1/name/${trimmedQuery}`)
+        .then(response => {
+          // Jos hakutuloksia on vain yksi, valitaan se automaattisesti
+          if (response.data.length === 1) {
+            setSelectedCountry(response.data[0]);
+          }
+          setCountries(response.data);
+        })
         .catch(error => console.error('Error fetching country data:', error));
     } else {
-      setCountries([]);
+      setCountries([]); // Tyhjennys
+      setSelectedCountry(null); // Tyhjennetään valittu maa, jos hakusana on tyhjennetty
     }
   }, [query]);
 
@@ -23,6 +35,7 @@ const App = () => {
     setQuery(event.target.value);
   };
 
+  // Valitaan maa tilaksi
   const handleSelectCountry = country => {
     setSelectedCountry(country);
   };
@@ -42,7 +55,6 @@ const App = () => {
       {countries.length <= 10 && countries.length > 1 && (
         <CountryList countries={countries} onSelectCountry={handleSelectCountry} />
       )}
-      {countries.length === 1 && <CountryDetail country={countries[0]} />}
       {selectedCountry && <CountryDetail country={selectedCountry} />}
     </div>
   );
