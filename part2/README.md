@@ -62,15 +62,23 @@ Tämä on yksikertainen puhelinluettelona toimiva sovellus.
 - **Virheilmoitukset:** Näyttää punaisen taustan ja viestin, joka kertoo epäonnistuneesta operaatiosta.
 
 
-## Lorem Ipsum (tehtävät 2.18, 2.19 ja 2.20)
+## maantieto (tehtävät 2.18, 2.19 ja 2.20)
 
-_part2_
+_part2_/maantieto/src
 
 **Sovellus toimii seuraavanlaisesti:**
 
+Tämä on yksinkertainen React-sovellus, joka näyttää tietoja eri maista, kuten maassa puhuttavat kielet ja sääolosuhteet.
+Sovellus hakee tiedot REST Countries -API:sta ja säätiedot OpenWeatherMap API:sta.
+
+![maantieto](image-2.png)
+
+**Hae maita:** Käyttäjät voivat hakea maita hakupalkin avulla.
+- **Näytä maan tiedot:** Hakutuloksista valitun maan tiedot, kuten pääkaupunki, väkiluku ja kielet, näytetään.
+- **Säätiedot:** Näyttää valitun maan pääkaupungin säätiedot OpenWeatherMap API:n avulla.
 
 
-## Sovelluksen Rakenne
+
 
 
 
