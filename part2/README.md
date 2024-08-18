@@ -77,7 +77,13 @@ Sovellus hakee tiedot REST Countries -API:sta ja säätiedot OpenWeatherMap API:
 - **Näytä maan tiedot:** Hakutuloksista valitun maan tiedot, kuten pääkaupunki, väkiluku ja kielet, näytetään.
 - **Säätiedot:** Näyttää valitun maan pääkaupungin säätiedot OpenWeatherMap API:n avulla.
 
+`App` -komponentti, on sovelluksen pääkomponentti, joka hallitsee sovelluksen toimintalogiikkaa. Vastaa hakutulosten ja valitun maan tietojen näytön.
 
+`CountryList` -komponentti näyttää listan maista, jotka vastaavat hakukyselyä (Näyttää 2-10 hakutulosta. Jos enemmän, niin pyydetään tarkentamaan hakua). Jokaiselle hakutuloksen maalle on myös "Show" -painike. 
+
+`CountryDetail` -komponentti näyttää valitun maan yksityiskohtaiset tiedot (pääkaupunki, väkiluku, kielet, lippu ja pääkaupungin sää)
+
+`Axios` -kirjastoa käytetään sovelluksen HTTP-pyyntöjen tekemisessä. 
 
 
 
