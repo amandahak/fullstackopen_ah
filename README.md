@@ -8,19 +8,21 @@ Kurssi sisältää myös osat, joissa tutustutaan TypeScriptiin, React Nativeen 
 
 Kurssilla käsitellään myös sovellusten testaamista, konttiteknologiaa, konfigurointia ja suoritusympäristöjen hallintaa sekä tietokantoja.
 
-## Osat 0., 1. ja 2.
+## Osat 0, 1 ja 2
 
 _fullstackopen_ah/_
 
-`part0`, `part1` ja `part2` pitävät jokainen sisällään omat README -tiedostot, joissa kuvaillaan osuuksiin liittyvien harjoitustehtävä-sovelluksien tarkempia ominaisuuksia. 
+kansiot `part0`, `part1` ja `part2` pitävät jokainen sisällään omat README -tiedostonsa, joissa kuvaillaan tarkemmin osuuksiin liittyvien harjoitustehtävien aihealueita sekä aiheisiin liittyvien harjoitussovelluksien ominaisuuksia. 
 
 [part0 README](https://github.com/amandahak/fullstackopen_ah/blob/5523fc98519e92565c7b3dec3789e51586d0cf53/part0/README.md)
+
 [part1 README](https://github.com/amandahak/fullstackopen_ah/blob/5523fc98519e92565c7b3dec3789e51586d0cf53/part1/README.md)
+
 [part2](https://github.com/amandahak/fullstackopen_ah/blob/5523fc98519e92565c7b3dec3789e51586d0cf53/part2/README.md)
 
 
-### Kurssin osat:
-* Osat 0-5 (ydinkurssi) - Full Stack ‑websovelluskehitys (5 op, CSM141081)
+## Kurssin osat:
+* **Osat 0-5 (ydinkurssi) - Full Stack ‑websovelluskehitys (5 op, CSM141081)**
 * Osa 6 - Full Stack ‑websovelluskehitys, lisäosa 1 (1 op, CSM141082)
 * Osa 7 - Full Stack ‑websovelluskehitys, lisäosa 2 (1 op, CSM141083)
 * Osa 8 - Full Stack ‑websovelluskehitys: GraphQL (1 op, CSM14113)
