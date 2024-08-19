@@ -18,7 +18,7 @@ kansiot `part0`, `part1` ja `part2` pitävät jokainen sisällään omat README 
 
 [part1 README](https://github.com/amandahak/fullstackopen_ah/blob/5523fc98519e92565c7b3dec3789e51586d0cf53/part1/README.md)
 
-[part2](https://github.com/amandahak/fullstackopen_ah/blob/5523fc98519e92565c7b3dec3789e51586d0cf53/part2/README.md)
+[part2 README](https://github.com/amandahak/fullstackopen_ah/blob/5523fc98519e92565c7b3dec3789e51586d0cf53/part2/README.md)
 
 
 ## Kurssin osat:
