@@ -1,6 +1,6 @@
 # Full Stack Open -kurssin 0. 1. ja 2. osuuksien palautusrepo
-[Linkki kurssialustalle](https://fullstackopen.com/)
-[Kurssin 3. osuuden palautusrepo](https://github.com/amandahak/fullstackopen_ah_2)
+* [Linkki kurssialustalle](https://fullstackopen.com/)
+* [Kurssin 3. osuuden palautusrepo](https://github.com/amandahak/fullstackopen_ah_2)
 
 Kurssilla tutustutaan JavaScriptilla tapahtuvaan moderniin web-sovelluskehitykseen. 
 Pääpaino on React-kirjaston avulla toteutettavissa single page ‑sovelluksissa ja niitä tukevissa Node.js:llä toteutetuissa REST- ja GraphQL-rajapinnoissa. 
